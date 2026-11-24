@@ -6,13 +6,13 @@
 - 미리보기(발표용 링크): https://claude.ai/artifact/KQUkjY6aZyKQwHsbcXYKU7
 - 글꼴: SUITE (`fonts/`, 라이선스는 `fonts/SUITE-LICENSE.txt`)
 - 화면 크기: 1935 × 1047 반원 무대. 창 크기에 맞춰 자동으로 줄어들어요(`js/stage.js`).
+- 원래 `KY-game_2026` 레포의 `zedis4/` 폴더였고, 커밋 이력을 그대로 가져와 독립 레포로 분리했어요.
 
 ## 실행해 보기
 
 `index.html`을 브라우저로 열면 돼요. 글꼴까지 제대로 보려면 간단한 서버로 여는 게 좋아요.
 
 ```bash
-cd zedis4
 python3 -m http.server 4173
 ```
 
@@ -46,7 +46,7 @@ python3 -m http.server 4173
 ## 파일 구조
 
 ```
-zedis4/
+.
 ├── index.html        모든 화면의 뼈대(화면마다 <section data-screen="…">)
 ├── css/
 │   ├── base.css      공통 토큰·반원 무대·글자 출력 효과
